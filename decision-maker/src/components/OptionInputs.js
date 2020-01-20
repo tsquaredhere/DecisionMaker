@@ -49,7 +49,7 @@ const OptionsInput = ({ options, handleChange, deleteChoice }) => {
                             </div>
                         </div>
                         <div className='column-delete'>
-                            <button type='button' data-id ={i}className="ui mini inverted teal button" onClick={deleteChoice}>Delete Choice </button>
+                            <button type='button' className="ui mini inverted teal button" onClick={() => deleteChoice(val)}>Delete Choice </button>
                         </div>
                     </div>
                 </div>

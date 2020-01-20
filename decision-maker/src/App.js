@@ -64,8 +64,15 @@ class App extends React.Component {
     }
   }
 
-  deleteChoiceHandler = (e) => {
-    console.log(e.target.dataset.id)
+  deleteChoiceHandler = (obj) => {
+    this.setState((prevState) => {
+      return ({
+        options: prevState.options.filter(function(item) {
+          return item !== obj
+      })
+      
+      })
+    })
   }
 
   
